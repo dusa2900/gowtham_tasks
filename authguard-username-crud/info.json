@@ -1,0 +1,18 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "projectId": 1,
+      "projectName": "Dusa goutham",
+      "projectHead": "Nandha kishore",
+      "startDate": "2021-12-09"
+    },
+    {
+      "id": 2,
+      "projectId": 2,
+      "projectName": "Sangu Adinarayana Reddys",
+      "projectHead": "Nandha kishore",
+      "startDate": "28-04-2021"
+    }
+  ]
+}

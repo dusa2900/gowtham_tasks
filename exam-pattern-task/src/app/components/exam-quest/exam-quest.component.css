@@ -1,0 +1,12 @@
+p {
+    font-size: larger;
+    font-weight: 600;
+    font-family:cursive;
+}
+
+
+ol span li {
+    font-size: large;
+    font-family:cursive;
+    color: rgba(10, 10, 10, 0.548);
+}

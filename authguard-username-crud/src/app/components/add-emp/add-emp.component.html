@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+      <div class="row">
+        <h3 class="text-center">Create Project </h3>
+       
+      
+          <form #userForm="ngForm"  (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label"> <strong>P R O J E C T &nbsp;&nbsp; I D</strong></label>
+              <input type="text" class="form-control" id="project_id" [(ngModel)]="project.projectId" name="projectId" #projectId="ngModel" required [class.is-invalid]="projectId.invalid && projectId.touched">
+            <small class="text-danger" [class.d-none]="projectId.valid || projectId.untouched">Invalid Details</small>
+            </div>
+            <div class="form-group">
+            
+        <label for="exampleInputPassword1" class="form-label"><strong>P R O J E C T &nbsp;&nbsp; N A M E</strong></label>
+              <input type="text" class="form-control" id="project_desc" [(ngModel)]="project.projectName" name="projectDesc"   #projectDesc="ngModel" required [class.is-invalid]="projectDesc.invalid && projectDesc.touched">
+              <small class="text-danger" [class.d-none]="projectDesc.valid || projectDesc.untouched">Invalid Details</small>
+                        </div>
+            <div class="form-group">
+              
+        <label for="exampleInputPassword1" class="form-label"><strong>P R O J E C T &nbsp;&nbsp; H E A D</strong></label>
+              <input type="text" class="form-control" id="project_head" [(ngModel)]="project.projectHead" name="projectHead"  #projectHead="ngModel" required [class.is-invalid]="projectHead.invalid && projectHead.touched">
+              <small class="text-danger" [class.d-none]="projectHead.valid || projectHead.untouched">Invalid Details</small>
+            </div>
+            <div class="form-group">
+          
+        <label for="exampleInputPassword1" class="form-label"><strong>S T A R T &nbsp;&nbsp; D A T E</strong></label>
+              <input type="Date" class="form-control" id="start_date" [(ngModel)]="project.startDate" name="startDate" name="startDate" #startDate="ngModel" required [class.is-invalid]="startDate.invalid && startDate.touched">
+              <small class="text-danger" [class.d-none]="startDate.valid || startDate.untouched">Invalid Details</small>
+            </div>
+            <br/>
+            <button class="btn btn-success" [disabled]="!userForm.valid" type="submit">Submit</button>
+  
+          </form>
+      
+  
+      </div>
+  
+    </div>
+  
+  </div>

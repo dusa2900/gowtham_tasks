@@ -1,0 +1,9 @@
+.content 
+{
+   border: 4px double red;
+   width: 600px;
+   margin: 0 auto;
+   margin-top: 250px;
+   text-align: center;
+    padding: 60px;
+}

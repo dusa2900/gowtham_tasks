@@ -1,0 +1,65 @@
+
+
+
+h4
+{
+    font-weight: bold;
+    color: red;
+    font-family: cursive;
+    text-decoration: underline;
+}
+h5
+{
+    
+    position: absolute;
+    top:30px;
+    right:200px;
+   font-weight: bold;
+   text-transform: uppercase;
+
+}
+.questionDiv {
+    margin-top: 5%;
+    width: max-content;
+}
+
+.quesComponent {
+    min-height: 200px;
+}
+
+.submitDiv {
+    float: right;
+    margin-top: 5%;
+    width: 250px;
+   
+}
+
+.questionNumberBox {
+    margin-right: 10px;
+    background-color: rgb(190, 208, 211);
+    color: black;
+    height: 70vh;
+    border: 1px solid rgb(13, 15, 11);
+    box-shadow: -6px 6px 2px grey;
+}
+
+.questionNumberBox div {
+    margin: 8px;
+    height: 9%;
+    padding-top: 10px;
+  
+}
+
+.questionNumberBox div:hover {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(53, 129, 228);
+    align-items: center;
+}
+
+.bgQues {
+    background-color: rgb(29, 155, 29);
+    font-size: large;
+    color: white;
+}

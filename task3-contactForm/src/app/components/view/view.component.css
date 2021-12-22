@@ -1,0 +1,26 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contactList p{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+hr {
+   
+    color: inherit;
+    background-color: currentColor;
+    box-shadow: 2px 2px 2px grey;
+    opacity: 1;
+}
+input[type="search"]
+{
+    font-weight: bolder;
+}
+span
+{
+    cursor: pointer;
+}

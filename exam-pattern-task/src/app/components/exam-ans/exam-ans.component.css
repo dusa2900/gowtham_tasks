@@ -1,0 +1,13 @@
+.result
+{
+    border: 4px dashed grey;
+    width: 600px;
+    padding: 40px;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+}
+.result span{
+    color: red;
+    text-transform: uppercase;
+}

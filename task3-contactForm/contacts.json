@@ -1,0 +1,19 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Dusa Goutham",
+      "email": "goutham.dusa@techwave.net"
+    },
+    {
+      "id": 2,
+      "name": "K Prabhakar Kumar",
+      "email": "prabhakar.k@techwave.net"
+    },
+    {
+      "name": "pavan Sai vejju",
+      "email": "pavan.vejju@gmail.com",
+      "id": 4
+    }
+  ]
+}

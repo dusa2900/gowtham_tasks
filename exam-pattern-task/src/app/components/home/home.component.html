@@ -1,0 +1,43 @@
+<div class="container-fluid m-5">
+    <h4>TECHNICAL EXAM:</h4>
+    <h5><img class="mb-2"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/768px-User_icon_2.svg.png"
+            alt="" width="50" height="40">{{username}}</h5>
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <div class="offset-2 col-6 questionDiv">
+                    <div class="quesComponent col-12 mb-5">
+                        <app-exam-quest [question]="questionNo" (answers)="getAnswersArray($event)"></app-exam-quest>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <button class="btn btn-dark" *ngIf="questionNo!=1" (click)="questionNo = questionNo - 1">
+                                &nbsp; PREVIOUS &nbsp;</button>
+                        </div>
+                        <div class="col-lg-6 text-right">
+                            <button class="btn btn-dark mr-5" *ngIf="questionNo < questions.length"
+                                (click)="questionNo = questionNo + 1"> &nbsp; &nbsp; NEXT &nbsp; &nbsp;</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-2 ">
+            <div class="questionNumberBox">
+                <ng-container *ngFor="let ele of questions">
+                    <div class="text-center" [class.bgQues]="answerObject[ele.id]" (click)="questionNo = ele.id">
+                        {{ele.id}}
+                    </div>
+                </ng-container>
+            </div>
+            <div class="submitDiv text-right mr-5">
+                <button class="btn btn-success w-100" (click)="postResult()">
+                    SUBMIT
+                </button>
+            </div>
+        </div>
+        <div class=" col-1"></div>
+    </div>
+</div>
