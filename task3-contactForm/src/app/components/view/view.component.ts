@@ -18,6 +18,7 @@ export class ViewComponent implements OnInit {
   ngOnInit(): void {
     this.getContact();
   }
+
   getContact() {
     this.service.getContacts().subscribe((res: any) => {
       console.log(res);

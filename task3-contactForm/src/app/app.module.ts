@@ -6,8 +6,10 @@ import { AppComponent } from './app.component';
 import { ViewComponent } from './components/view/view.component';
 //import { FormComponent } from './components/form/form.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule ,HTTP_INTERCEPTORS} from '@angular/common/http';
 import { FilterPipe } from './filter.pipe';
+import { RequestInterceptor } from './interceptor/request.interceptor';
+import { MatchInterceptor } from './interceptor/match.interceptor';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,17 @@ import { FilterPipe } from './filter.pipe';
     BrowserModule,
     AppRoutingModule,FormsModule,HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide:HTTP_INTERCEPTORS,
+      useClass:RequestInterceptor,
+      multi:true
+    },
+  {
+      provide:HTTP_INTERCEPTORS,
+      useClass:MatchInterceptor,
+      multi:true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
